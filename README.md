@@ -1,5 +1,5 @@
 ## kobolt
-Stripped down game engine without directct graphics support.
+Stripped down game engine without graphics support.
 
 ```rust
 pub fn main() {
