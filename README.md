@@ -7,3 +7,12 @@ fn main() {
     println!("Hello World");
 }
 ```
+
+## Structure
+_This is an overview of how Kobolt is working_
+```mermaid
+flowchart TD;
+    A[Application] --> B[Renderer];
+    A --> C[Update]
+    A --> D[Input]
+```
