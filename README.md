@@ -2,7 +2,7 @@
 Stripped down game engine without directct graphics support.
 
 ```rust
-pub fn main() {
+fn main() {
     println!("Hello World");
 }
 ```
