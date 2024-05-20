@@ -3,9 +3,13 @@ Kobolt is an open-source game engine backend, meaning that it will just implemen
 
 ## Example code (just for testing)
 ```rust
-use kobolt::*;
+use kobolt::{
+    application::Application,
+    renderer::Renderer,
+};
 
 fn main() {
-    println!("Hello World");
+    Application::new()
+        .set_renderer(...)
 }
 ```
