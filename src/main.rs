@@ -5,7 +5,8 @@ use kobolt::application::{
 
 fn main() {
     Application::new()
-        .execute(start, RunOption::Init);
+        .execute(start, RunOption::Init)
+    ;
 }
 
 fn start() {
