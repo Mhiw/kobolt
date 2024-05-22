@@ -18,7 +18,7 @@ impl Application {
         }
     }
 
-    pub fn execute(&self, function: fn(), option: RunOption) {
+    pub fn execute(&mut self, function: fn(), option: RunOption) -> &mut Self {
         match option {
             RunOption::Update => {
                 while self.running {
@@ -29,13 +29,15 @@ impl Application {
                 function();
             },
         };
+        self
     }
 
     pub fn quit(&mut self) {
-
+        self.running = false;
     }
     
-    pub fn set_renderer(&mut self, renderer: Renderer) {
+    pub fn set_renderer(&mut self, renderer: Renderer) -> &mut Self {
         self.renderer = Some(renderer);
+        self
     }
 }
