@@ -14,7 +14,7 @@ impl Application {
     pub fn new() -> Application {
         Application {
             renderer: None,
-            running: false,
+            running: true,
         }
     }
 
@@ -22,7 +22,6 @@ impl Application {
         match option {
             RunOption::Update => {
                 while self.running {
-                    println!("Update:");
                     function();
                 }
             },
