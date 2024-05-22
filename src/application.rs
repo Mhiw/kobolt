@@ -22,6 +22,7 @@ impl Application {
         match option {
             RunOption::Update => {
                 while self.running {
+                    println!("Update:");
                     function();
                 }
             },
