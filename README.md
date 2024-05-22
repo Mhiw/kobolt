@@ -4,12 +4,20 @@ Kobolt is an open-source game engine backend, meaning that it will just implemen
 ## Example code (just for testing)
 ```rust
 use kobolt::{
-    application::Application,
-    renderer::Renderer,
+    application::{
+        Application,
+        RunOption,
+    },
+    //renderer::Renderer, -- For rendering
 };
 
 fn main() {
     Application::new()
-        .set_renderer(...)
+        .execute(start, RunOption::Init)
+    ;
+}
+
+fn start() {
+    println!("Kobolt is now initiated!");
 }
 ```
